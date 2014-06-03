@@ -42,7 +42,7 @@ plot(as.numeric(sub_all$Sub_metering_1) ~ sub_all$Date_Time_col,
 points(as.numeric(sub_all$Sub_metering_2) ~ sub_all$Date_Time_col, type = "l", col = "red")
 points(as.numeric(sub_all$Sub_metering_3) ~ sub_all$Date_Time_col, type = "l", col = "blue")
 legend("topright", lty=1, col = c("black", "red", "blue" ), 
-       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=0.6)
 
 
 dev.copy(png, file = "plot3.png")
